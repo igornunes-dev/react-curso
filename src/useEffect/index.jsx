@@ -10,9 +10,9 @@ export default function App() {
   const [counter2, setCounter2] = useState(0);
 
   //componentDidUpdate -> executa toda vez que o componente atualiza
-  // useEffect(() => {
-  //   console.log('componentDidUpdate');
-  // });
+  useEffect(() => {
+    console.log('componentDidUpdate');
+  });
 
   //componentDidMount -> executa apenas uma vez
   useEffect(() => {

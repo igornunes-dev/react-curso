@@ -1,7 +1,8 @@
 import './App.css';
-import ExEffect from './useEffect/ExEffect';
+import AppMemo from './useMemo/index';
+
 function App() {
-  return <ExEffect />;
+  return <AppMemo />;
 }
 
 export default App;
