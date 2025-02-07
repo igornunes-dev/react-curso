@@ -1,5 +1,4 @@
 //Compound Component
-
 import React, { cloneElement, useState } from 'react'
 import { Children } from 'react';
 
@@ -16,7 +15,7 @@ const s = {
 //   })
 // }
 
-const TurnOnOff = ( {children}) => {
+const TurnOnOff = ( {children} ) => {
   const [isOn, setIsOn] = useState(false);
   const onTurn = () => setIsOn(s => !s)
 
@@ -29,7 +28,7 @@ const TurnOnOff = ( {children}) => {
   })
 }
 
-const TurnedOn = ({isOn, children}) => isOn ? children : null;
+const TurnedOn = ({isOn, children}) => isOn ? children : null; 
 const TurnedOff = ({isOn, children}) => isOn ? null : children;
 const TurnButton = ({isOn, onTurn, ...props}) => {
   return <button {...props} onClick={onTurn}>Turn {isOn ? 'Off' : 'On'}</button>
